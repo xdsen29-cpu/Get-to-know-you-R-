@@ -208,7 +208,7 @@
         </div>
 
         <!-- Yahan action mein apna Formspree link dalein (jaise: action="https://formspree.io/f/YOUR_FORM_ID") -->
-        <form id="getKnowForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+        <form id="getKnowForm" action="https://formspree.io/f/mqppybyy" method="POST">
             <div class="form-group">
                 <label>Aapka Username / Naam *</label>
                 <input type="text" name="username" id="username" placeholder="Apna naam yahan likhein..." required>
@@ -271,9 +271,9 @@
         <!-- Direct Admin Login Box -->
         <div class="admin-login-box">
             <h3>🔐 Admin Submissions Login</h3>
-            <p style="font-size: 11px; color: #666; margin-bottom: 8px;">Default Password: <b>1234</b></p>
+            <p style="font-size: 11px; color: #666; margin-bottom: 8px;">Default Password: </p>
             <div class="login-flex">
-                <input type="password" id="adminPasswordInput" placeholder="Enter password (1234)...">
+                <input type="password" id="adminPasswordInput" placeholder="Enter password.">
                 <button type="button" onclick="checkAdminLogin()" class="submit-btn" style="width: 120px; padding: 10px;">Login</button>
             </div>
         </div>
@@ -336,13 +336,13 @@
     function checkAdminLogin() {
         const passwordInput = document.getElementById('adminPasswordInput').value;
         
-        if (passwordInput === "1234") {
+        if (passwordInput === "anshurewa1212") {
             document.getElementById('adminPasswordInput').value = '';
             userView.classList.add('hidden');
             adminView.classList.remove('hidden');
             loadSubmissions();
         } else {
-            alert("Galat password! Sahi password dalein (1234).");
+            alert("Galat password! Sahi password dalein.");
         }
     }
 
